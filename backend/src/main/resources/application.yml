@@ -1,0 +1,39 @@
+# Application Configuration
+spring:
+  application:
+    name: stock-exchange
+
+  profiles:
+    active: prod
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:370fc2ad32927ff329d2807b020a92cbde3d349b44c19304d3c8e8b107365042}
+  expiration: 14400000  # 4 hours
+
+# Application-specific Configuration
+app:
+  paths:
+    # Base paths
+    api-base: /api
+    api-version: /v1
+    user-base: /user
+    auth-base: /auth
+
+    # Public endpoints (no authentication required)
+    public-paths:
+      - /
+      - /swagger-ui/**
+      - /v3/api-docs/**
+      - /swagger-resources/**
+      - /webjars/**
+      - /docs
+      - /actuator/health
+      - /actuator/info
+      - /h2-console/**
+
+    # Authentication endpoints
+    auth-endpoints:
+      - /register
+      - /login
+      - /refresh-token

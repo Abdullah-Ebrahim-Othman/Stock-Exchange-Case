@@ -1,0 +1,105 @@
+# ===========================
+# FRONTEND (Next.js / Node.js)
+# ===========================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# Testing
+frontend/coverage/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# Production build
+frontend/build/
+
+# Environment Files
+frontend/.env*
+frontend/.vercel/
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# TypeScript
+frontend/*.tsbuild.info
+frontend/next-env.d.ts
+
+# System Files
+.DS_Store
+*.pem
+
+
+# ===========================
+# BACKEND (Java / Spring Boot)
+# ===========================
+
+# Maven target folders
+backend/target/
+target/
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+/logs
+
+# Packaging files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# VM Crash Logs
+hs_err_pid*
+
+# ===========================
+# DATABASE FILES (H2 or local DB)
+# ===========================
+backend/data/*.mv.db
+backend/data/*.trace.db
+backend/data/*.lock.db
+backend/data/*.db
+
+# Keep readme
+!backend/data/README.md
+
+
+package-lock.json
+
+
+
+
+# OTHER OS-GENERATED FILES
+# ===========================
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+data/
+backend/data
